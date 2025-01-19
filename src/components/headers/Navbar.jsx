@@ -1,13 +1,13 @@
-import React from "react";
+// import React from "react";
 import { Link } from "react-router-dom";
 
 export const Navbar = ({ hidePortfolio = false }) => {
   return (
     <nav className="td-main-menu-content">
       <ul>
-        <li className="has-dropdown">
-          <Link to="/"> Home</Link>
-          <ul className="td-submenu submenu">
+        {/* <li className="has-dropdown">
+          <Link to="/" className="text-white"> Home</Link>
+          <ul className="td-submenu submenu ">
             <li>
               <Link to="/">Main Home</Link>
             </li>
@@ -24,62 +24,59 @@ export const Navbar = ({ hidePortfolio = false }) => {
               <Link to="/home5">Insurance Home</Link>
             </li>
           </ul>
-        </li>
+        </li> */}
 
         <li className="has-dropdown">
-          <a href="#">Pages</a>
+          <a href="#" className="text-white">About Us</a>
           <ul className="td-submenu submenu">
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">Overview</Link>
             </li>
             <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/portfolio">History</Link>
             </li>
             <li>
-              <Link to="/portfolio-details">Portfolio Details</Link>
+              <Link to="/portfolio-details">Life At Crystal</Link>
             </li>
             <li>
-              <Link to="/team">Team</Link>
+              <Link to="/team">Leadership</Link>
             </li>
             <li>
-              <Link to="/team-details">Team Details</Link>
+              <Link to="/team-details">Manufacturing</Link>
             </li>
             <li>
-              <Link to="/faq">Faq</Link>
-            </li>
-            <li>
-              <Link to="/error">Error</Link>
+              <Link to="/faq">Chairman Journey</Link>
             </li>
           </ul>
         </li>
 
         <li className="has-dropdown">
-          <Link to="/blog">Blog</Link>
-          <ul className="td-submenu submenu">
+          <Link to="/blog" className="text-white">Our Business</Link>
+          {/* <ul className="td-submenu submenu">
             <li>
               <Link to="/blog">Blog</Link>
             </li>
             <li>
               <Link to="/blog-details">Blog Details</Link>
             </li>
-          </ul>
+          </ul> */}
         </li>
-
-        <li className="has-dropdown">
-          <Link to="/service">Featured</Link>
-          <ul className="td-submenu submenu">
+  {/* <ul className="td-submenu submenu">
             <li>
               <Link to="/service">Service</Link>
             </li>
             <li>
               <Link to="/service-details">Service Details</Link>
             </li>
-          </ul>
+          </ul> */}
+        <li className="has-dropdown">
+          <Link to="/service" className="text-white">R & D</Link>
+        
         </li>
 
-        {hidePortfolio ? null : (
-          <li className="has-dropdown">
-            <Link to="/portfolio">Portfolio</Link>
+        {/* {hidePortfolio ? null : (
+          <li className="has-dropdown ">
+            <Link to="/portfolio" className="text-white">Sustainability</Link>
             <ul className="td-submenu submenu">
               <li>
                 <Link to="/portfolio">Portfolio</Link>
@@ -89,9 +86,11 @@ export const Navbar = ({ hidePortfolio = false }) => {
               </li>
             </ul>
           </li>
-        )}
-
-        <li>
+        )} */}
+        <li className="text-white">
+          <Link to="/contact">Sustainability</Link>
+        </li>
+        <li className="text-white">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>

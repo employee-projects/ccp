@@ -1,5 +1,5 @@
-import React from "react";
-import LOGO from "../../assets/img/logo/logo.png";
+// import React from "react";
+import LOGO from "../../assets/img/logo/crystallogo.png";
 import { useHeaderLang, useHeaderSticky } from "./useHeader";
 import { Navbar } from "./Navbar";
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ export const HeaderOne = () => {
       <header>
         <div className="td-header-area td-transparent">
           {/* top */}
-          <div className="td-header-top d-none d-md-block">
+          {/* <div className="td-header-top d-none d-md-block">
             <div className="container container-1750">
               <div className="row">
                 <div className="col-12">
@@ -68,7 +68,7 @@ export const HeaderOne = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* bottom */}
           <div className="td-header-bottom" id="header-sticky">
@@ -77,7 +77,31 @@ export const HeaderOne = () => {
                 <div className="col-12">
                   <div className="border-bottom-2 td-header-mobile-space">
                     <div className="row align-items-center">
-                      <div className="col-xxl-4 col-xl-4 col-lg-3">
+                    <div className="col-xxl-3 col-xl-2 col-lg-2 col-7">
+                        <div className="td-header-logo text-start mr-90">
+                          <Link to="/">
+                            <img src={LOGO} alt="logo" />
+                          </Link>
+                        </div>
+                      </div>
+
+               
+                      <div className="col-xxl-5 col-xl-8 col-lg-8 col-5">
+                        <div className="td-main-menu td-main-menu-01 d-none d-lg-block">
+                          <Navbar />
+                        </div>
+
+                        {/* mobile icon */}
+                        <div className="td-header-bar d-block d-lg-none text-right">
+                          <button className="td-offcanvas-open-btn td-menu-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* <div className="col-xxl-4 col-xl-4 col-lg-3">
                         <div className="td-header-search d-none d-lg-block">
                           <form action="#">
                             <div className="td-header-input p-relative">
@@ -105,28 +129,8 @@ export const HeaderOne = () => {
                             </div>
                           </form>
                         </div>
-                      </div>
-                      <div className="col-xxl-3 col-xl-2 col-lg-2 col-7">
-                        <div className="td-header-logo text-end mr-90">
-                          <Link to="/">
-                            <img src={LOGO} alt="logo" />
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="col-xxl-5 col-xl-6 col-lg-7 col-5">
-                        <div className="td-main-menu td-main-menu-01 d-none d-lg-block">
-                          <Navbar />
-                        </div>
+                      </div> */}
 
-                        {/* mobile icon */}
-                        <div className="td-header-bar d-block d-lg-none text-right">
-                          <button className="td-offcanvas-open-btn td-menu-bar">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </button>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

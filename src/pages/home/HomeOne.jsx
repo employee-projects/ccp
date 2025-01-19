@@ -1,6 +1,7 @@
-import React from "react";
+// import React from "react";
 import { Layout } from "../../layouts/Layout";
-import { HeroOne } from "../../components/hero_sections/HeroOne";
+// import { HeroOne } from "../../components/hero_sections/HeroOne";
+import { HeroBase } from "../../components/hero_sections/HeroBase";
 import { ServiceAreaOne } from "../../components/service/ServiceAreaOne";
 import { AboutOne } from "../../components/about/AboutOne";
 import { AwardsOne } from "../../components/awards/AwardsOne";
@@ -16,7 +17,7 @@ export const HomeOne = () => {
   return (
     <Layout header={1} footer={1}>
       {/* hero section */}
-      <HeroOne />
+      <HeroBase />
 
       {/* about section */}
       <AboutOne />

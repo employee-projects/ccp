@@ -1,22 +1,24 @@
 // import React from "react";
-import BG_IMG from "../../assets/img/hero/bg.jpg";
+// import BG_IMG from "../../assets/img/hero/bg.jpg";
+import BG_IMG from "../../assets/img/banners/kanak.png";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "../swiper/SwiperRoot";
 
-export const HeroOne = () => {
+export const HeroBase = () => {
   return (
     <>
       <div
         className="td-hero-area td-hero-spacing bg-position"
         style={{ backgroundImage: `url(${BG_IMG})` }}
       >
+        
         {/* slider */}
         <div className="td-hero-text-slider mb-70">
           <TextSlider />
         </div>
 
         {/* bottom */}
-        <div className="td-hero-bottom">
+        <div className="td-hero-bottom text-center">
           <div className="container">
             <div className="row">
               <div className="col-lg-9 mb-30">
@@ -25,11 +27,11 @@ export const HeroOne = () => {
                   data-wow-delay=".4s"
                   data-wow-duration="1s"
                 >
-                  <h3 className="td-hero-achive-title">
-                    Achieve
+                  <h3 className="td-hero-achive-title text-white">
+                  {/* Safe and environmentally */}
                     <br />
                     <Link className="td-left-right" to="/contact">
-                      <span className="td-arrow-angle">
+                      {/* <span className="td-arrow-angle">
                         <svg
                           className="td-arrow-svg-top-right td-bg-none"
                           width="34"
@@ -53,11 +55,12 @@ export const HeroOne = () => {
                             strokeLinejoin="round"
                           />
                         </svg>
-                      </span>
+                      </span> */}
                     </Link>
-                    results with
+                    {/* responsible production */}
                     <br />
-                    <span className="td-title-border">modern idea</span>
+                    {/* <span className="">modern idea</span> */}
+                    {/* <span className="td-title-border">modern idea</span> */}
                   </h3>
                 </div>
               </div>
@@ -93,7 +96,14 @@ const TextSlider = () => {
     "Business",
     "Agency",
   ];
-
+  // const LIST_OF_TEXT_SLIDES = [
+  //   "Business",
+  //   "Agency",
+  //   "Business",
+  //   "Agency",
+  //   "Business",
+  //   "Agency",
+  // ];
   const swiper_settings = {
     loop: true,
     speed: 400000,
@@ -112,7 +122,7 @@ const TextSlider = () => {
             <SwiperSlide key={index}>
               <div className="swiper-slide">
                 <div className="td-hero-text-slider-content text-center">
-                  <h4 className="td-hero-text-slider-title">{text}</h4>
+                  <h4 className="td-hero-text-slider-title" style={{color:"transparent", visibility:"hidden"}}>{text}</h4>
                 </div>
               </div>
             </SwiperSlide>
